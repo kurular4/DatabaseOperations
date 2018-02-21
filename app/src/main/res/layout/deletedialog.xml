@@ -8,11 +8,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Silmek istediğinize emin misiniz?"/>
+        android:text="Are you sure you want to delete it?"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/sil"
+        android:id="@+id/delete"
         android:text="SİL"/>
 
 </LinearLayout>
