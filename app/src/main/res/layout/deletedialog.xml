@@ -12,7 +12,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/delete"
-        android:text="SİL"/>
+        android:id="@+id/sil"
+        android:text="Delete"/>
 
 </LinearLayout>
