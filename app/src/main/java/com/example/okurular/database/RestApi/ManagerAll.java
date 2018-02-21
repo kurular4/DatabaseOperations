@@ -15,8 +15,8 @@ public class ManagerAll extends BaseManager {
         return ourInstance;
     }
 
-    public Call<Result> ekle(String isim, String soyad){
-        Call<Result> call = getRestApiClient().addUser(isim, soyad);
+    public Call<Result> addUser(String name, String surname){
+        Call<Result> call = getRestApiClient().addUser(name, surname);
         return call;
     }
 
@@ -25,7 +25,7 @@ public class ManagerAll extends BaseManager {
         return call;
     }
 
-    public Call<Result> sil(int id) {
+    public Call<Result> deleteUser(int id) {
         Call<Result> call = getRestApiClient().deleteUser(id);
         return call;
     }
