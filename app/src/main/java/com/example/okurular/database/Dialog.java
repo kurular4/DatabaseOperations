@@ -50,7 +50,7 @@ public class Dialog {
     }
 
     public void sil() {
-        Call<Result> x = ManagerAll.getInstance().sil(id);
+        Call<Result> x = ManagerAll.getInstance().deleteUser(id);
         x.enqueue(new Callback<Result>() {
             @Override
             public void onResponse(Call<Result> call, Response<Result> response) {
