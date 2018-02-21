@@ -13,13 +13,13 @@ import retrofit2.http.POST;
 public interface RestApi {
 
     @FormUrlEncoded
-    @POST("ekle.php")
-    Call<Result> addUser(@Field("isim") String isim, @Field("soyad") String soyad);
+    @POST("add.php")
+    Call<Result> addUser(@Field("name") String name, @Field("lastname") String surname);
 
-    @GET("listele.php")
+    @GET("list.php")
     Call<List<Result>> getUsers();
 
     @FormUrlEncoded
-    @POST("sil.php")
+    @POST("delete.php")
     Call<Result> deleteUser(@Field("id") int id);
 }
