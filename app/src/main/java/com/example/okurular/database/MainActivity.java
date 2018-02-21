@@ -63,11 +63,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ekle() {
-        Call<Result> x = ManagerAll.getInstance().ekle(name.getText().toString(), surname.getText().toString());
+        Call<Result> x = ManagerAll.getInstance().addUser(name.getText().toString(), surname.getText().toString());
         x.enqueue(new Callback<Result>() {
             @Override
             public void onResponse(Call<Result> call, Response<Result> response) {
-                Toast.makeText(getApplicationContext(), "basarılı", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "successful", Toast.LENGTH_LONG).show();
                 listele();
             }
 
